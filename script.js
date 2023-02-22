@@ -12,6 +12,7 @@ function randomNumGenerator(){
 }
 
 function guessNum() {
+	// alert(check7);
   input = Number(document.getElementById("guess").value);
 }
 function print() {
