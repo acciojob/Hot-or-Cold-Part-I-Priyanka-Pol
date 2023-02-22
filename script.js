@@ -10,16 +10,15 @@ function randomNumGenerator(){
 	guessNum();
 	print();
 }
+
 function guessNum() {
-	input= Number(document.getElementById("guess").value);
+  input = Number(document.getElementById("guess").value);
 }
-function Print(){
-	if(Math.abs(randomNum - input) <= 5){
-		document.getElementById("respond").innerText = "Hot";
-	}
-	else{
-		document.getElementById("respond").innerHTML = "Cold";
-	}
+function print() {
+  if (Math.abs(randomNum - input) <= 5) {
+    document.getElementById("respond").innerText = "Hot";
+  } else {
+    document.getElementById("respond").innerHTML = "Cold";
+  }
 }
 btn.addEventListener("click", randomNumGenerator);
-
